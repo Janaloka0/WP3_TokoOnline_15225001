@@ -16,7 +16,7 @@
                         </div>
                         <a href="{{ route('produk.detail', $row->id) }}">
                             <button class="main-btn quick-view"><i class="fa fa-search-plus"></i> Detail Produk</button>
-                        </a>
+                        </a> <!-- /yang ditambah -->
                         <img src="{{ asset('storage/img-produk/thumb_md_' . $row->foto) }}" alt="">
                     </div>
                     <div class="product-body">
@@ -25,7 +25,7 @@
                         <div class="product-btns">
                             <a href="{{ route('produk.detail', $row->id) }}" title="Detail Produk">
                             <button class="main-btn icon-btn"><i class="fa fa-search-plus"></i></button>
-                            </a>
+                            </a> <!-- /yang ditambah -->
                             <form action="3" method="post"
                                 style="display: inline-block;" title="Pesan Ke Aplikasi">
                                 @csrf
