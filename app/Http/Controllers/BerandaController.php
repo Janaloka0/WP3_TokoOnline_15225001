@@ -16,10 +16,10 @@ class BerandaController extends Controller
 
     public function index()
     {
-    $produk = Produk::where('status', 1)->orderBy('updated_at', 'desc')->paginate(6);
-    return view('v_beranda.index', [
-    'judul' => 'Halan Beranda',
-    'produk' => $produk,
-    ]);
+        $produk = Produk::where('status', 1)->orderBy('updated_at', 'desc')->paginate(6);
+        return view('v_beranda.index', [
+            'judul' => 'Halan Beranda',
+            'produk' => $produk,
+        ]);
     }
 }
